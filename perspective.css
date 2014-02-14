@@ -4,8 +4,8 @@ body {
 
 #container {
 	margin: 40px auto;
-	/*Twelve letters of 50px*/
-	width: 600px; /*12 * 50px = 600px*/
+	/* Twelve letters of 40px + 12 * 2px margin */
+	width: 504px; /* 12 * 40px + 24px = 600px*/
 	position: relative;
 }
 
