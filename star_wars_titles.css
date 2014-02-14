@@ -20,6 +20,7 @@ body {
 
 p {
 	font-size: 1.2em;
+	font-weight: bold;
 }
 
 #container {
@@ -30,9 +31,36 @@ p {
 	margin: 0.5em auto;
 }
 
+@-webkit-keyframes slideUp {
+	15% {
+		-webkit-transform: rotateX(85deg) translateY(20%) translateZ(200px);
+	}
+	30% {
+		-webkit-transform: rotateX(85deg) translateY(-10%) translateZ(200px);
+	}
+	45% {
+		-webkit-transform: rotateX(85deg) translateY(-40%) translateZ(200px);
+	}
+	60% {
+		-webkit-transform: rotateX(85deg) translateY(-110%) translateZ(200px);
+	}
+	75% {
+		-webkit-transform: rotateX(85deg) translateY(-140%) translateZ(200px);
+	}
+	90% {
+		-webkit-transform: rotateX(85deg) translateY(-170%) translateZ(200px);
+		opacity: 0.9;
+	}
+	100% {
+		-webkit-transform: rotateX(85deg) translateY(-200%) translateZ(200px);
+		opacity: 0;
+	}
+}
+
 .titles {
-	-webkit-transform: rotateX(85deg) translateZ(200px) translateY(1000px);
-	color: yellow;
+	-webkit-transform: rotateX(85deg) translateZ(200px) translateY(50%);
+	-webkit-animation: slideUp 90s linear;
+	color: rgb(255, 239, 0);
 	margin: 0 auto;
 	text-align: justify;
 	position: absolute;
