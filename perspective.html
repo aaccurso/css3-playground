@@ -1,50 +1,50 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="description" content="Playing with CSS3 3D transform properties.">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>MyNameFlip</title>
-        <link rel="stylesheet" href="perspective.css">
-        <link rel="author" href="humans.txt">
-    </head>
-    <body>
-       <div id="container"></div>
+  <head>
+      <meta charset="utf-8">
+      <meta name="description" content="Playing with CSS3 3D transform properties.">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>MyNameFlip</title>
+      <link rel="stylesheet" href="perspective.css">
+      <link rel="author" href="humans.txt">
+  </head>
+  <body>
+     <div id="container"></div>
 
-       <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-       <script type="text/javascript">
-       	(function($){
-       		var my_name = "Alan_Accurso",
-       			i = 0, len = my_name.length;
-       		
-          // Create two div elements for each letter.
-          // One upper case and the other lower case.
-          for(; i < len; i ++) {
-       			var $container = document.getElementById('container'),
-       				$div = document.createElement('div'),
-              $figure = document.createElement('div'),
-       				$upper_case = document.createElement('div'),
-       				$lower_case = document.createElement('div');
+     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+     <script type="text/javascript">
+     	(function($){
+     		var my_name = "Alan_Accurso",
+     			i = 0, len = my_name.length;
+     		
+        // Create two div elements for each letter.
+        // One upper case and the other lower case.
+        for(; i < len; i ++) {
+     			var $container = document.getElementById('container'),
+     				$div = document.createElement('div'),
+            $figure = document.createElement('div'),
+     				$upper_case = document.createElement('div'),
+     				$lower_case = document.createElement('div');
 
-       			$div.setAttribute('class', 'letter-wrapper');
-            $figure.setAttribute('class', 'letter');
-       			$upper_case.setAttribute('class', 'upper-case');
-       			$lower_case.setAttribute('class', 'lower-case');
+     			$div.setAttribute('class', 'letter-wrapper');
+          $figure.setAttribute('class', 'letter');
+     			$upper_case.setAttribute('class', 'upper-case');
+     			$lower_case.setAttribute('class', 'lower-case');
 
-            $div.appendChild($figure);
-            $figure.appendChild($upper_case);
-       			$figure.appendChild($lower_case);
+          $div.appendChild($figure);
+          $figure.appendChild($upper_case);
+     			$figure.appendChild($lower_case);
 
-       			$upper_case.innerText = my_name[i].toLocaleUpperCase();
-       			$lower_case.innerText = my_name[i].toLocaleLowerCase();
-       			$container.appendChild($div);
-       		}
+     			$upper_case.innerText = my_name[i].toLocaleUpperCase();
+     			$lower_case.innerText = my_name[i].toLocaleLowerCase();
+     			$container.appendChild($div);
+     		}
 
-          // On mouseenter flip the letter.
-          $('#container').find('.letter').on( 'mouseenter', function() {
-              $( this ).toggleClass( 'letter-hover' );
-          });
-       	})(jQuery);
-       </script>
-    </body>
+        // On mouseenter flip the letter.
+        $('#container').find('.letter').on( 'mouseenter', function() {
+            $( this ).toggleClass( 'letter-hover' );
+        });
+     	})(jQuery);
+     </script>
+  </body>
 </html>
