@@ -6,10 +6,14 @@ body {
 	margin: 40px auto;
 	/*Twelve letters of 50px*/
 	width: 600px; /*12 * 50px = 600px*/
+	position: relative;
 }
 
 .letter-wrapper {
 	-webkit-perspective: 400px;
+	float: left;
+	position: relative;
+	margin: 0 1px;
 }
 
 .letter {
@@ -20,7 +24,9 @@ body {
 	-ms-transition: 1s;
 	transition: 1s;
 	margin: 0;
-	float: left;
+	position: relative;
+	width: 40px;
+	height: 34px;
 }
 
 .letter div {
@@ -29,8 +35,8 @@ body {
 	font-size: 30px;
 	width: 40px;
 	height: 30px;
-	margin: 0 1px;
 	padding: 2px 0;
+	position: absolute;
 }
 
 .letter .lower-case {
