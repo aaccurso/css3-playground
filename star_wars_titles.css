@@ -15,7 +15,7 @@ body {
 	background: url(images/stars.png) repeat;
 	font-size: 54px;
 	font-family: 'FranklinGothicBookRegular', sans-serif;
-	-webkit-font-smoothing: antialiased;
+	line-height: 130%;
 }
 
 p {
@@ -24,7 +24,7 @@ p {
 }
 
 @-webkit-keyframes fadeInOut {
-	10% , 90% {
+	15% , 85% {
 		opacity: 1;
 	}
 }
@@ -33,7 +33,7 @@ p {
 	color: rgb(61, 207, 255);
 	margin: 4em auto;
 	width: 14em;
-	-webkit-animation: fadeInOut 5s 1s linear;
+	-webkit-animation: fadeInOut 6s 1s linear;
 	position: absolute;
 	left: 10em; 
 	opacity: 0;
@@ -42,16 +42,21 @@ p {
 @-webkit-keyframes zoomDown {
 	0%, 10% {
 		-webkit-transform: scale(1);
+		opacity: 1;
+	}
+	80% {
+		opacity: 1;
 	}
 	to {
 		-webkit-transform: scale(0);
+		opacity: 0;
 	}
 }
 
 .logo-container {
 	margin: 1em;
 	-webkit-transform: scale(0);
-	-webkit-animation: zoomDown 6s 6s ease-in-out;
+	-webkit-animation: zoomDown 6s 8s ease-in-out;
 	position: absolute;
 	left: 0; right: 0;	
 }
@@ -77,12 +82,13 @@ p {
 	-webkit-perspective-origin: center 250px;
 	position: relative;
 	width: 15em;
+	max-height: 100%;
 	margin: 0 auto;
 }
 
 .titles {
-	-webkit-transform: rotateX(85deg) translateZ(200px) translateY(40%);
-	-webkit-animation: slideUp 90s 10s linear;
+	-webkit-transform: rotateX(85deg) translateZ(200px) translateY(55%);
+	-webkit-animation: slideUp 90s 13s linear;
 	color: rgb(255, 239, 0);
 	margin: 0 auto;
 	text-align: justify;
