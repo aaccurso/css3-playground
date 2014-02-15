@@ -5,90 +5,229 @@ body {
 
 #container {
 	-webkit-perspective: 60em;
-	-webkit-perspective-origin: -50% -50%;
 	position: relative;
-	width: 20em; height: 20em;
+	width: 20em;
+	height: 20em;
 	margin: 10em auto;
+}
+
+#container.top-left {
+	-webkit-perspective-origin: -70% -70%;
+}
+
+#container.bottom-left {
+	-webkit-perspective-origin: -70% 170%;
+}
+
+#container.top-right {
+	-webkit-perspective-origin: 170% -70%;
+}
+
+#container.bottom-right {
+	-webkit-perspective-origin: 170% 170%;
 }
 
 #dice {
 	-webkit-transform: translateZ(-10em);
+	-moz-transform: translateZ(-10em);
+	-o-transform: translateZ(-10em);
+	-ms-transform: translateZ(-10em);
+	transform: translateZ(-10em);
+
 	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+
 	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	-o-transition: 1s;
+	-ms-transition: 1s;
+	transition: 1s;
 	position: relative;
-	width: 20em; height: 20em;
+	width: 20em;
+	height: 20em;
 }
 
 #dice .face {
 	position: absolute;
-	width: 20em; height: 20em;
-	background-color: rgba(240,150,100,0.8);
-	border: 1px black solid;
-	border-radius: 1em;
+	width: 20em;
+	height: 20em;
 	cursor: pointer;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform-style: preserve-3d;
+	/*background-color:  rgba(240,150,100,0.8);*/
+	/*border:  1px black solid;*/
+	border-radius: 2em;
 }
 
-#dice .face .face-content {
-	text-align: center;
-	position: absolute;
-	top: 50%;
-	width: 100%; height: 100%;
-	font-size: 2em;
-	color: white;
+/*To fill gaps left by border radius*/
+.face:after {
+    content: '';
+    right: 0px;
+    bottom: 0px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: black;
+	border-radius: 2em;
+    -webkit-transform: rotateY( 180deg );
+    -webkit-backface-visibility: hidden;
 }
 
+#dice .face .face-content  {
+	text-align:  center;
+	position:  absolute;
+	top:  50%;
+	width:  100%;
+	height:  100%;
+	font-size:  2em;
+	color:  white;
+}
+
+/*Face Translation*/
 /*Front*/
-#dice .face:nth-child(1) {
-    -webkit-transform: translateZ(10em);
+#dice .face:nth-child(1)  {
+	 -webkit-transform:  translateZ(10em);
+	-moz-transform: translateZ(10em);
+	-o-transform: translateZ(10em);
+	-ms-transform: translateZ(10em);
+	transform: translateZ(10em);
 }
 
 /*Bottom*/
 #dice .face:nth-child(2) {
 	-webkit-transform: rotateX(-90deg) translateZ(10em);
+	-moz-transform: rotateX(-90deg) translateZ(10em);
+	-o-transform: rotateX(-90deg) translateZ(10em);
+	-ms-transform: rotateX(-90deg) translateZ(10em);
+	transform: rotateX(-90deg) translateZ(10em);
 }
 
 /*Left*/
 #dice .face:nth-child(3) {
 	-webkit-transform: rotateY(90deg) translateZ(10em);
+	-moz-transform: rotateY(90deg) translateZ(10em);
+	-o-transform: rotateY(90deg) translateZ(10em);
+	-ms-transform: rotateY(90deg) translateZ(10em);
+	transform: rotateY(90deg) translateZ(10em);
 }
 
 /*Right*/
 #dice .face:nth-child(4) {
 	-webkit-transform: rotateY(-90deg) translateZ(10em);
+	-moz-transform: rotateY(-90deg) translateZ(10em);
+	-o-transform: rotateY(-90deg) translateZ(10em);
+	-ms-transform: rotateY(-90deg) translateZ(10em);
+	transform: rotateY(-90deg) translateZ(10em);
 }
 
 /*Top*/
 #dice .face:nth-child(5) {
 	-webkit-transform: rotateX(90deg) translateZ(10em);
+	-moz-transform: rotateX(90deg) translateZ(10em);
+	-o-transform: rotateX(90deg) translateZ(10em);
+	-ms-transform: rotateX(90deg) translateZ(10em);
+	transform: rotateX(90deg) translateZ(10em);
 }
 
 /*Back*/
 #dice .face:nth-child(6) {
 	-webkit-transform: rotateY(180deg) translateZ(10em);
+	-moz-transform: rotateY(180deg) translateZ(10em);
+	-o-transform: rotateY(180deg) translateZ(10em);
+	-ms-transform: rotateY(180deg) translateZ(10em);
+	transform: rotateY(180deg) translateZ(10em);
 }
 
 /*Dice Interaction*/
-/*Front*/
+/*One*/
 #dice.front {
 	-webkit-transform: translateZ(-10em) rotateY(0deg);
+	-moz-transform: translateZ(-10em) rotateY(0deg);
+	-o-transform: translateZ(-10em) rotateY(0deg);
+	-ms-transform: translateZ(-10em) rotateY(0deg);
+	transform: translateZ(-10em) rotateY(0deg);
 }
-/*Bottom*/
+
+/*Two*/
 #dice.bottom {
 	-webkit-transform: translateZ(-10em) rotateX(90deg);
+	-moz-transform: translateZ(-10em) rotateX(90deg);
+	-o-transform: translateZ(-10em) rotateX(90deg);
+	-ms-transform: translateZ(-10em) rotateX(90deg);
+	transform: translateZ(-10em) rotateX(90deg);
 }
-/*Left*/
+
+/*Three*/
 #dice.left {
 	-webkit-transform: translateZ(-10em) rotateY(-90deg);
+	-moz-transform: translateZ(-10em) rotateY(-90deg);
+	-o-transform: translateZ(-10em) rotateY(-90deg);
+	-ms-transform: translateZ(-10em) rotateY(-90deg);
+	transform: translateZ(-10em) rotateY(-90deg);
 }
-/*Right*/
+
+/*Four*/
 #dice.right {
 	-webkit-transform: translateZ(-10em) rotateY(90deg);
+	-moz-transform: translateZ(-10em) rotateY(90deg);
+	-o-transform: translateZ(-10em) rotateY(90deg);
+	-ms-transform: translateZ(-10em) rotateY(90deg);
+	transform: translateZ(-10em) rotateY(90deg);
 }
-/*Top*/
+
+/*Five*/
 #dice.top {
 	-webkit-transform: translateZ(-10em) rotateX(-90deg);
+	-moz-transform: translateZ(-10em) rotateX(-90deg);
+	-o-transform: translateZ(-10em) rotateX(-90deg);
+	-ms-transform: translateZ(-10em) rotateX(-90deg);
+	transform: translateZ(-10em) rotateX(-90deg);
 }
-/*Back*/
+
+/*Six*/
 #dice.back {
 	-webkit-transform: translateZ(-10em) rotateX(-180deg);
+	-moz-transform: translateZ(-10em) rotateX(-180deg);
+	-o-transform: translateZ(-10em) rotateX(-180deg);
+	-ms-transform: translateZ(-10em) rotateX(-180deg);
+	transform: translateZ(-10em) rotateX(-180deg);
+}
+
+/*Dice Sprite*/
+.dice_sprite {
+	background-image: url('images/Dice_Faces.svg');
+	background-repeat: no-repeat;
+	-webkit-background-size: 640%;
+	-moz-background-size: 640%;
+	background-size: 640%;
+	width: 20em;
+	height: 20em;
+	background-position-y: -21.9em;
+	border-radius: 2em;
+}
+
+.dice_sprite.front {
+	background-position-x: -2.2em;
+}
+
+.dice_sprite.bottom {
+	background-position-x: -22.9em;
+}
+
+.dice_sprite.left {
+	background-position-x: -43.7em;
+}
+
+.dice_sprite.right {
+	background-position-x: -64.5em;
+}
+
+.dice_sprite.top {
+	background-position-x: -85.6em;
+}
+
+.dice_sprite.back {
+	background-position-x: -106.4em;
 }
