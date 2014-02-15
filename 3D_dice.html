@@ -9,6 +9,16 @@
         <link rel="author" href="humans.txt">
     </head>
     <body>
+        
+        <nav>
+            <header>View Types</header>
+            <ul>
+                <li class="top-left active">Top Left</li>
+                <li class="bottom-left">Bottom Left</li>
+                <li class="top-right">Top Right</li>
+                <li class="bottom-right">Bottom Right</li>
+            </ul>
+        </nav>
 
     	<div id="container" class="top-left">
             <div id="dice">
@@ -42,11 +52,29 @@
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript">
         (function($) {
-            var $dice = $('#dice');
+            var $dice = $('#dice'),
+                $container = $('#container'),
+                $view_options = $('nav li');
             
             $dice.find('.face').click(function(){
                 $dice.removeClass();
                 $dice.addClass( $(this).attr('id') );
+            });
+
+            $view_options.click(function(){
+                var $active_view_type;
+
+                if( $(this).hasClass('active') ) return;
+
+                // Can't use find() method because .active class is one of the <li> elements.
+                $active_view_type = $view_options.closest('.active');
+                // Remove active view type
+                $container.removeClass( $active_view_type.attr('class').replace('active','').trim() );
+                $active_view_type.removeClass('active');
+
+                // Add new view type
+                $container.addClass( $(this).attr('class') );
+                $(this).addClass('active');
             });
         })(jQuery);
     </script>

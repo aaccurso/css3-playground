@@ -1,10 +1,53 @@
 body {
 	font-size: 15px;
-	background-color: #EEEEEE;
+	background: rgb(205,235,142);
+}
+
+nav {
+	position: fixed;
+	top: 1em; left: 1em;
+	border-radius: 1em;
+	background-color: #AAAAAA;
+	box-shadow: 2px 2px 2px grey;
+	padding: 1em 0 0;
+}
+
+nav ul {
+	list-style: none;
+	padding: 0;
+}
+
+nav header {
+	font-size: 1.5em;
+	font-weight: bold;
+	text-decoration: underline;
+	padding: 0 1em;
+}
+
+nav ul li {
+	font-size: 1.2em;
+	cursor: pointer;
+	padding: 0.5em 1em;
+	margin: 1px 0;
+}
+
+nav ul li.active {
+	border-top: 1px black dashed;
+	border-bottom: 1px black dashed;
+}
+
+nav ul li:hover {
+	background-color: #DDDDDD;
 }
 
 #container {
 	-webkit-perspective: 60em;
+	-webkit-perspective-origin: -70% -70%;
+	-webkit-transition: 1s ease-in-out;
+	-moz-transition: 1s ease-in-out;
+	-o-transition: 1s ease-in-out;
+	-ms-transition: 1s ease-in-out;
+	transition: 1s ease-in-out;
 	position: relative;
 	width: 20em;
 	height: 20em;
@@ -33,17 +76,15 @@ body {
 	-o-transform: translateZ(-10em);
 	-ms-transform: translateZ(-10em);
 	transform: translateZ(-10em);
-
 	-webkit-transform-style: preserve-3d;
 	-moz-transform-style: preserve-3d;
 	-ms-transform-style: preserve-3d;
 	transform-style: preserve-3d;
-
-	-webkit-transition: 1s;
-	-moz-transition: 1s;
-	-o-transition: 1s;
-	-ms-transition: 1s;
-	transition: 1s;
+	-webkit-transition: 1s ease-in-out;
+	-moz-transition: 1s ease-in-out;
+	-o-transition: 1s ease-in-out;
+	-ms-transition: 1s ease-in-out;
+	transition: 1s ease-in-out;
 	position: relative;
 	width: 20em;
 	height: 20em;
