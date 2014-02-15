@@ -5,7 +5,7 @@ body {
 
 #container {
 	-webkit-perspective: 60em;
-	-webkit-perspective-origin: -8em -8em;
+	-webkit-perspective-origin: -50% -50%;
 	position: relative;
 	width: 20em; height: 20em;
 	margin: 10em auto;
@@ -15,7 +15,7 @@ body {
 	-webkit-transform: translateZ(-10em);
 	-webkit-transform-style: preserve-3d;
 	-webkit-transition: 1s;
-	position: absolute;
+	position: relative;
 	width: 20em; height: 20em;
 }
 
@@ -25,6 +25,7 @@ body {
 	background-color: rgba(240,150,100,0.8);
 	border: 1px black solid;
 	border-radius: 1em;
+	cursor: pointer;
 }
 
 #dice .face .face-content {
@@ -63,5 +64,31 @@ body {
 
 /*Back*/
 #dice .face:nth-child(6) {
-	-webkit-transform: translateZ(-10em);
+	-webkit-transform: rotateY(180deg) translateZ(10em);
+}
+
+/*Dice Interaction*/
+/*Front*/
+#dice.front {
+	-webkit-transform: translateZ(-10em) rotateY(0deg);
+}
+/*Bottom*/
+#dice.bottom {
+	-webkit-transform: translateZ(-10em) rotateX(90deg);
+}
+/*Left*/
+#dice.left {
+	-webkit-transform: translateZ(-10em) rotateY(-90deg);
+}
+/*Right*/
+#dice.right {
+	-webkit-transform: translateZ(-10em) rotateY(90deg);
+}
+/*Top*/
+#dice.top {
+	-webkit-transform: translateZ(-10em) rotateX(-90deg);
+}
+/*Back*/
+#dice.back {
+	-webkit-transform: translateZ(-10em) rotateX(-180deg);
 }

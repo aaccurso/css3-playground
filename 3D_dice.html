@@ -12,26 +12,38 @@
 
     	<div id="container">
             <div id="dice">
-                <div class="face">
+                <div id="front" class="face">
                     <div class="face-content">Front-One</div>
                 </div>
-                <div class="face">
+                <div id="bottom" class="face">
                     <div class="face-content">Bottom-Two</div>
                 </div>
-                <div class="face">
+                <div id="left" class="face">
                     <div class="face-content">Left-Three</div>
                 </div>
-                <div class="face">
+                <div id="right" class="face">
                     <div class="face-content">Right-Four</div>
                 </div>
-                <div class="face">
-                    <div class="face-content">Five-Top</div>
+                <div id="top" class="face">
+                    <div class="face-content">Top-Five</div>
                 </div>
-                <div class="face">
+                <div id="back" class="face">
                     <div class="face-content">Back-Six</div>
                 </div>
             </div>
         </div>
+
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+        (function($) {
+            var $dice = $('#dice');
+            
+            $dice.find('.face').click(function(){
+                $dice.removeClass();
+                $dice.addClass( $(this).attr('id') );
+            });
+        })(jQuery);
+    </script>
         
     </body>
 </html>
