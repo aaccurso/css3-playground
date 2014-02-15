@@ -1,0 +1,616 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"margin",
+				"margin"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"meta",
+				"META	Tag"
+			],
+			[
+				"re",
+				"relative"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"dis",
+				"display"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"hei",
+				"height"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"is",
+				"angular.isDefined	AngularJS"
+			],
+			[
+				"contac",
+				"contactTemplate"
+			],
+			[
+				"sele",
+				"$scope.selectedCategory.id"
+			],
+			[
+				"Panta",
+				"Pantalones"
+			],
+			[
+				"Ca",
+				"Capri"
+			],
+			[
+				"Buyer",
+				"BuyerSession"
+			],
+			[
+				"for",
+				"angular.forEach	AngularJS"
+			],
+			[
+				"draw",
+				"drawingCallbackReco"
+			],
+			[
+				"ng",
+				"ng-repeat"
+			],
+			[
+				"on",
+				"onClick"
+			],
+			[
+				"coll",
+				"collectionId"
+			],
+			[
+				"camisas",
+				"camisasMujer"
+			],
+			[
+				"ropa",
+				"ropaTop"
+			],
+			[
+				"rop",
+				"ropaTop"
+			],
+			[
+				"item-",
+				"item-container"
+			],
+			[
+				"border-col",
+				"border-color"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"$root",
+				"$rootScope"
+			],
+			[
+				"action",
+				"actionType"
+			],
+			[
+				"fun",
+				"fun	Function"
+			],
+			[
+				"item-info",
+				"item-info-container"
+			],
+			[
+				"margin-",
+				"margin-bottom"
+			],
+			[
+				"vestaro",
+				"vestaroMain"
+			],
+			[
+				"au",
+				"authentication"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/JSLint/JSLint.sublime-build",
+	"command_palette":
+	{
+		"height": 173.0,
+		"selected_items":
+		[
+			[
+				"set html",
+				"Set Syntax: HTML"
+			],
+			[
+				"set css",
+				"Set Syntax: CSS"
+			],
+			[
+				":w",
+				":w - Save"
+			],
+			[
+				"toggle",
+				"Emmet: Toggle Comment"
+			],
+			[
+				"prefere",
+				"Preferences: Settings - User"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				":html",
+				"Set Syntax: HTML"
+			],
+			[
+				":q",
+				"Set Syntax: SQL"
+			],
+			[
+				"task",
+				"Set Syntax: Task"
+			],
+			[
+				"jslint",
+				"JSLint"
+			],
+			[
+				"prefixr",
+				"Preferences: Prefixr Key Bindings – Default"
+			],
+			[
+				"prefix",
+				"Preferences: Prefixr Key Bindings – User"
+			],
+			[
+				":e",
+				":e - Revert"
+			],
+			[
+				"preferuser",
+				"Preferences: Settings - User"
+			],
+			[
+				"angularj",
+				"AngularJS: Look Up Definition"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 472.0
+	},
+	"console":
+	{
+		"height": 146.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Alan/git/Maderasmil/css/3d_dice.css",
+		"/C/Users/Alan/git/css3-playground/3D_dice.html",
+		"/C/Users/Alan/Copy/CXIA_aaccurso/REPMGR1.2/chequea_tamanio_pg_xlog.sh",
+		"/C/Users/Alan/Copy/CXIA_aaccurso/REPMGR1.2/chequea_replicacion_repmgr.sh",
+		"/C/Users/Alan/git/Maderasmil/css/hoverdir.css",
+		"/C/Users/Alan/git/Maderasmil/css/style.css",
+		"/C/Users/Alan/git/Maderasmil/index.html",
+		"/C/Users/Alan/git/Maderasmil/css/maderasmil.sublime-project",
+		"/C/Users/Alan/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Alan/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Alan/git/Maderasmil/js/jquery.hoverdir.js",
+		"/E/Desktop/DirectionAwareHoverEffect/index.html",
+		"/C/Users/Alan/Copy/jQuery-Parallax-master/style.css",
+		"/C/Users/Alan/Copy/jQuery-Parallax-master/index.html",
+		"/C/Users/Alan/Copy/jQuery-Parallax-master/scripts/jquery.scrollTo-1.4.2-min.js",
+		"/C/Users/Alan/AppData/Roaming/Sublime Text 2/Packages/Prefixr/Default (Windows).sublime-keymap",
+		"/C/Users/Alan/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Alan/git/vestaro/app/views/main.scala.html",
+		"/C/Users/Alan/git/vestaro/public/js/app.js",
+		"/C/Users/Alan/git/vestaro/app/views/buyerProfile.scala.html",
+		"/C/Users/Alan/git/vestaro/public/js/controllers.js",
+		"/C/Users/Alan/git/vestaro/public/html/server/buyerNavbar.html",
+		"/C/Users/Alan/git/vestaro/public/html/server/noUserNavbar.html",
+		"/C/Users/Alan/git/vestaro/public/html/server/sellerNavbar.html",
+		"/C/Users/Alan/git/vestaro/public/html/server/500InternalServerError.html",
+		"/C/Users/Alan/git/vestaro/public/html/server/403Forbidden.html",
+		"/C/Users/Alan/git/vestaro/public/html/loginNavbar.html",
+		"/C/Users/Alan/git/vestaro/public/js/routingNavigation.js",
+		"/C/Users/Alan/git/vestaro/public/js/buyerControllers.js",
+		"/C/Users/Alan/git/vestaro/app/views/ordersHistory.scala.html",
+		"/C/Users/Alan/git/vestaro/app/views/buyItem.scala.html",
+		"/C/Users/Alan/git/vestaro/app/models/Seller.java",
+		"/C/Users/Alan/git/vestaro/public/html/sellerDetails.html",
+		"/C/Users/Alan/git/vestaro/public/html/buyer/buyerHome.html",
+		"/C/Users/Alan/git/vestaro/conf/routes",
+		"/C/Users/Alan/git/vestaro/app/controllers/SellerController.java",
+		"/C/Users/Alan/git/vestaro/public/html/sellerSettings.html",
+		"/C/Users/Alan/git/vestaro/public/html/garment/details.html",
+		"/C/Users/Alan/git/vestaro/app/controllers/ItemController.java",
+		"/C/Users/Alan/git/vestaro/public/html/buyer/itemSearch.html",
+		"/C/Users/Alan/git/vestaro/public/html/buyer/wishlist.html",
+		"/C/Users/Alan/git/vestaro/app/views/notifications.scala.html",
+		"/C/Users/Alan/git/vestaro/public/css/main.css",
+		"/C/Users/Alan/git/vestaro/public/js/directives.js",
+		"/C/Users/Alan/git/vestaro/public/js/filters.js",
+		"/C/Users/Alan/git/vestaro/app/controllers/BuyerController.java",
+		"/C/Users/Alan/git/vestaro/app/controllers/DashboardController.java",
+		"/C/Users/Alan/git/vestaro/app/controllers/PaymentController.java",
+		"/C/Users/Alan/git/vestaro/app/controllers/NotificationController.java",
+		"/C/Users/Alan/git/vestaro/public/js/collectionsManager.js",
+		"/C/Users/Alan/git/vestaro/public/html/collectionForm.html",
+		"/C/Users/Alan/git/vestaro/public/html/alertModal.html",
+		"/C/Users/Alan/git/vestaro/public/html/contact.html",
+		"/C/Users/Alan/git/vestaro/app/views/payOrder.scala.html",
+		"/C/Users/Alan/git/vestaro/app/views/index.scala.html",
+		"/C/Users/Alan/git/vestaro/app/controllers/Application.java",
+		"/C/Users/Alan/git/vestaro/conf/application.conf",
+		"/C/Users/Alan/git/vestaro/project/Build.scala",
+		"/C/Users/Alan/git/vestaro/app/models/PaymentManager.java",
+		"/C/Users/Alan/git/vestaro/app/controllers/Authentication.java",
+		"/C/Users/Alan/git/vestaro/.travis.yml",
+		"/C/Users/Alan/git/vestaro/conf/evolutions/default/1.sql",
+		"/C/Users/Alan/git/vestaro/app/models/User.java",
+		"/C/Users/Alan/git/vestaro/public/html/dashboard.html",
+		"/C/Users/Alan/git/vestaro/public/html/dashboardFull.html",
+		"/C/Users/Alan/git/vestaro/public/js/sellerDashboards/dashboardFull.js",
+		"/C/Users/Alan/git/vestaro/public/js/sellerDashboards/dashboard.js",
+		"/C/Users/Alan/git/vestaro/public/js/easyrec.js",
+		"/C/Users/Alan/git/vestaro/app/views/disputeModal.scala.html",
+		"/C/Users/Alan/git/vestaro/conf/initial-data.yml",
+		"/C/Users/Alan/git/vestaro/public/lib/easyrec-jsApi/easyrec-jsApi-v0.98.js",
+		"/C/Users/Alan/git/vestaro/public/html/buyItemModal.html",
+		"/C/Users/Alan/git/vestaro/public/html/buyer/friendsListModal.html",
+		"/C/Users/Alan/git/vestaro/public/html/authentication/registrationModalBuyerSelleChoice.html",
+		"/C/Users/Alan/git/vestaro/Procfile",
+		"/C/Users/Alan/git/vestaro/public/html/garment/listDetailed.html",
+		"/C/Users/Alan/git/vestaro/public/html/garment/listCompact.html",
+		"/C/Users/Alan/git/vestaro/app/controllers/CollectionController.java",
+		"/C/Users/Alan/git/vestaro/app/models/Collection.java",
+		"/C/Users/Alan/git/vestaro/app/controllers/WishlistController.java",
+		"/C/Users/Alan/git/vestaro/app/controllers/UserController.java",
+		"/C/Users/Alan/git/vestaro/app/views/recoExample.scala.html",
+		"/C/Users/Alan/git/vestaro/.target/views/main.scala.html",
+		"/C/Users/Alan/git/vestaro/target/scala-2.10/src_managed/main/views/html/main.template.scala",
+		"/C/Users/Alan/git/vestaro/target/scala-2.10/classes/initial-data.yml",
+		"/C/Users/Alan/git/vestaro/public/html/server/404NotFound.html",
+		"/C/Users/Alan/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/Alan/git/vestaro/project/plugins.sbt",
+		"/C/Users/Alan/git/vestaro/app/Global.java",
+		"/C/Users/Alan/git/vestaro/public/js/facebook.js",
+		"/C/Users/Alan/git/vestaro/public/channel.html",
+		"/C/Users/Alan/git/vestaro/public/lib/angularjs/1.0.8/docs/partials/api/ng.directive",
+		"/C/Users/Alan/git/vestaro/public/stylesheets/main.css",
+		"/C/Users/Alan/AppData/Roaming/Sublime Text 2/Packages/AngularJS/AngularJS-sublime-package.sublime-settings"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"C:\\Users\\Alan\\git\\vestaro\\public\\js",
+			"C:\\Users\\Alan\\git\\vestaro",
+			"C:\\Users\\Alan\\git\\vestaro\\public\\html",
+			"C:\\Users\\Alan\\git\\vestaro\\app",
+			"C:\\Users\\Alan\\git\\vestaro",
+			"C:\\Users\\Alan\\git\\vestaro\\public\\html\\garment",
+			"C:\\Users\\Alan\\git\\vestaro\\public\\img",
+			"C:\\Users\\Alan\\git\\vestaro\\app\\views",
+			"C:\\Users\\Alan\\git\\vestaro\\app",
+			"C:\\Users\\Alan\\git\\vestaro"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"LA_SEGUNDA",
+			"border-radius",
+			"logo",
+			"px",
+			"col-3",
+			"#nav",
+			"rgba(170,170,170,0.7)",
+			"0",
+			"rgb(254,205,45)",
+			"color",
+			"1s",
+			"1",
+			"padding: 100px 0 0 0;",
+			"third",
+			"</div>",
+			"<div>",
+			"4s",
+			"img src=\"images/dot.png\" alt=\"Link\" />",
+			"width",
+			"h2",
+			" title=\"Next Section\"",
+			"scripts/",
+			"z-index",
+			"header",
+			">.",
+			"Syntax",
+			"The",
+			"console.log",
+			"\n<script type=\"text/javascript\">\n\n$('.collapse').collapse('hide');\n\nfunction showDisputeModal(buyOrder){\n	$('#save').click(\n		function(){\n			openDispute(buyOrder);\n		}\n		);\n	$('#disputeModal').modal('show');\n}\n\nfunction openDispute(buyOrder){\n	$('#save').button('loading');\n	var disputeMessage = $('#disputeMessage').get(0).value;\n	jsRoutes.controllers.BuyerController.openDispute(buyOrder, disputeMessage).ajax(\n	{\n		success:function(json){\n			changeToInDispute(buyOrder);\n			$('#save').button('reset');\n			$('#disputeModal').modal('hide');\n\n		}\n	}\n	);\n}\n\nfunction confirmReception(buyOrder){\n	$(actionButton(buyOrder)).button('loading');\n	jsRoutes.controllers.BuyerController.confirmReception(buyOrder).ajax(\n	{\n		success:function(){\n			changeToReceptionConfirmed(buyOrder);\n		}\n	}\n	);\n}\nfunction changeToInDispute(buyOrder){\n					//Change state text and colo r+ delete open dispute button\n					changeState(buyOrder, 'En disputa', 'IN_DISPUTE','disputeButton' );\n\n				}\n\n				function changeToReceptionConfirmed(buyOrder){\n		//Change state text and colo r+ delete button\n		changeState(buyOrder, 'Recepción confirmada','RECEPTION_CONFIRMED' , 'actionButton');\n		deleteButton(buyOrder,'disputeButton');\n\n	}\n	\n	function changeState(buyOrder, stateMessage, stateClass, deletedButton){\n		var title=$($('#'+buyOrder).parent()).find('span');\n		$(title).text(stateMessage)\n		$(title).attr('class', 'badge active pull-right '+ stateClass)\n		deleteButton(buyOrder, deletedButton);\n\n	}	\n	\n	function deleteButton(buyOrder, buttonId){\n		var button = $('#' + buyOrder).find('#'+ buttonId);\n		if(!button)return;//was already deleted\n		$(button).fadeOut('normal', function(){\n			$(this).remove();\n		});\n	}\n\n	function actionButton(buyOrder){\n		return orderButton(buyOrder,'actionButton');\n	}\n	\n\n	function disputeButton(buyOrder){\n		return orderButton(buyOrder,'disputeButton');\n	}\n	\n	function orderButton(buyOrder, buttonId){\n		return $('#' + buyOrder).find('#'+buttonId);\n	}\n	\n	</script>\n\n	<style>\n	.PAYMENT_PENDING {\n		background-color: rgb(153, 134, 202);\n	}\n\n	.RECEPTION_PENDING {\n		background-color: rgb(100, 164, 233);\n	}\n\n	.RECEPTION_CONFIRMED {\n		background-color: rgb(55, 197, 72);\n	}\n\n	.IN_DISPUTE {\n		background-color: rgb(240, 77, 77);;\n	}\n	</style>",
+			"col-lg",
+			"img",
+			"viewIte",
+			"view",
+			"undefined",
+			"double",
+			"appSecretKey",
+			"localhost",
+			"easyrec.js",
+			"href",
+			"categories:",
+			"categories:\n    - &Accesorios !!models.Category\n        title:",
+			"buyerS",
+			"buyerSession",
+			"getItemsByList",
+			"tenantId",
+			"registrationModalBuyerSelleChoice",
+			"localhost",
+			"type: 'info'",
+			"\"#\"",
+			"'#'",
+			"\"#\"",
+			"href=\"#\"",
+			"href='#",
+			"href=\"#",
+			"href='#",
+			"href=\"#",
+			"href=\"#\"",
+			"href='#'",
+			"cubic-bezier(0.250, 0.250, 0.750, 0.750)",
+			"findCollectionsById",
+			"!!models.Seller\n                        id: 1",
+			"!!models.Seller\n                        id: 3",
+			"item-container",
+			"ng-animate",
+			"&ropaCool",
+			"col-md-2",
+			"col-sm-10",
+			"col-sm-2",
+			"col-sm-8",
+			"col-sm-offset-2 ",
+			"inputPassword3",
+			"inputEmail3",
+			"padding-bottom:50px;",
+			"!!models.Seller\n                    id: 1",
+			"    - !!models.Action\n        id:          ",
+			"$scope",
+			"easyrec_getSessionId",
+			"cursor",
+			"http://localhost:9000",
+			"localhost:9000",
+			"error",
+			"feedDialog",
+			"likeItem",
+			"400ms",
+			"save all",
+			"Seguir",
+			"seller.name",
+			"buyerHome",
+			"fb",
+			"item-container",
+			"</a>",
+			"<a",
+			"glyphicons-halflings-white.png",
+			"glyphicons"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"col-md",
+			"double precision",
+			"",
+			"BuyerSession",
+			"type: 'primary'",
+			"",
+			"ease-in-out",
+			"*ropaCool",
+			"col-md-4",
+			"col-md-8",
+			"col-md-2",
+			"col-md-10",
+			"",
+			"name",
+			"sellerLogo",
+			"margin-bottom:20px;",
+			"margin-bottom:20px;\n        id:          10000",
+			"    - !!models.Action\n        id:          10000",
+			"$rootScope",
+			"",
+			"vestaro.herokuapp.com",
+			"200ms",
+			"Continuar",
+			"seller.brandName",
+			"</button>",
+			"<button"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.649227110583,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 118.0
+	},
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				".js",
+				"ionic-todo/www/js/app.js"
+			],
+			[
+				".css",
+				"vestaro/public/css/main.css"
+			],
+			[
+				"html",
+				"amcharts/index.html"
+			],
+			[
+				"articlesanother",
+				"aaccurso.github.io/src/contents/articles/another-test/index.md"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 238.0,
+	"status_bar_visible": true
+}
