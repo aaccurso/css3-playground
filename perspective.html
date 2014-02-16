@@ -17,7 +17,6 @@
      	(function($){
         $.fn.flippingText = function(text, options) {
        		var words = text ? text.split(" ") : "flipping text".split(" "),
-            $container = this,
             $flipping_container = document.createElement('div'),
             settings = $.extend({
               // These are the defaults.
@@ -63,12 +62,14 @@
             $flipping_container.appendChild($word);
           });
           
-          $container.append($flipping_container);
+          this.append($flipping_container);
           // On mouseenter flip the letter.
-          $container.find('#flipping-container .letter-wrapper').on( 'mouseenter', function() {
+          this.find('#flipping-container .letter-wrapper').on( 'mouseenter', function() {
             console.log( $(this).find('.back-face').text() );
               $( this ).find('.letter').toggleClass( 'letter-flip' );
           });
+
+          return this;
         }
      	})(jQuery);
 
