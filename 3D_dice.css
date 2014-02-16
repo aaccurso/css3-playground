@@ -176,7 +176,12 @@ header .title {
 	opacity: 0;
 	color: red;
 	background: rgba(250,50,50,0.3);
-	border-radius: 1em;
+	border-radius: 0.5em;
+	-webkit-transition: 150ms ease-in-out;
+	-moz-transition: 150ms ease-in-out;
+	-o-transition: 150ms ease-in-out;
+	-ms-transition: 150ms ease-in-out;
+	transition: 150ms ease-in-out;
 }
 
 /*Face Translation*/
