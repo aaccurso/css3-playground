@@ -3,21 +3,30 @@ body {
 }
 
 #container {
+	-webkit-perspective: 500px;
+	-moz-perspective: 500px;
+	perspective: 500px;
 	margin: 40px auto;
 	/* Twelve letters of 40px + 12 * 2px margin */
 	width: 504px; /* 12 * 40px + 24px = 600px*/
 	position: relative;
-	-webkit-perspective: 500px;
 }
 
 .letter-wrapper {
 	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
 	float: left;
 	margin: 0 1px;
 }
 
 .letter {
 	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+
 	-webkit-transition: 1s;
 	-moz-transition: 1s;
 	-o-transition: 1s;
@@ -31,6 +40,8 @@ body {
 
 .letter div {
 	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
 	text-align: center;
 	font-size: 30px;
 	width: 40px;
@@ -40,23 +51,25 @@ body {
 }
 
 .letter .lower-case {
-	background: red;
-	color: white;
 	/*This is the back face*/
 	-webkit-transform: rotateX(180deg);
 	-moz-transform: rotateX(180deg);
 	-o-transform: rotateX(180deg);
 	-ms-transform: rotateX(180deg);
 	transform: rotateX(180deg);
+	background: red;
+	color: white;
+	text-transform: lowercase;
 }
 
 .letter .upper-case {
 	/*This is the front face*/
 	background: black;
 	color: yellow;
+	text-transform: uppercase;
 }
 
-.letter-hover {
+.letter-flip {
 	-webkit-transform: rotateX(180deg);
 	-moz-transform: rotateX(180deg);
 	-o-transform: rotateX(180deg);

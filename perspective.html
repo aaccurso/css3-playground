@@ -14,8 +14,9 @@
      <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
      <script type="text/javascript">
      	(function($){
-     		var my_name = "Alan_Accurso",
-     			i = 0, len = my_name.length;
+     		var my_name = "Alan Accurso",
+     			i = 0, len = my_name.length,
+          words = my_name.split(" ");
      		
         // Create two div elements for each letter.
         // One upper case and the other lower case.
@@ -35,14 +36,13 @@
           $figure.appendChild($upper_case);
      			$figure.appendChild($lower_case);
 
-     			$upper_case.innerText = my_name[i].toLocaleUpperCase();
-     			$lower_case.innerText = my_name[i].toLocaleLowerCase();
+     			$upper_case.innerText = $lower_case.innerText = my_name[i];
      			$container.appendChild($div);
      		}
 
         // On mouseenter flip the letter.
         $('#container').find('.letter').on( 'mouseenter', function() {
-            $( this ).toggleClass( 'letter-hover' );
+            $( this ).toggleClass( 'letter-flip' );
         });
      	})(jQuery);
      </script>
