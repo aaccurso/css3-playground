@@ -1,6 +1,7 @@
 body {
 	font-size: 15px;
 	background: rgb(205,235,142);
+	font-family: sans-serif;
 }
 
 /*Nav Style*/
@@ -52,7 +53,7 @@ nav ul li:hover {
 header .title {
 	margin: 0.5em auto 0;
 	width: 100%;
-	text-align: center;	font-family: sans-serif;
+	text-align: center;
 	font-size: 5em;
 	font-weight: bold;
 	text-decoration: overline;
@@ -143,7 +144,7 @@ header .title {
 }
 
 /*To fill gaps left by border radius*/
-.face:after {
+#dice .face:after {
 	-webkit-transform: rotateY( 180deg );
 	-moz-transform: rotateY( 180deg );
 	-o-transform: rotateY( 180deg );
@@ -162,14 +163,20 @@ header .title {
 	border-radius: 1em;
 }
 
+#dice .face:hover .face-content {
+	opacity: 1;
+}
+
 #dice .face .face-content {
 	text-align: center;
 	position: absolute;
-	top: 50%;
 	width: 100%;
 	height: 100%;
 	font-size: 2em;
-	color: white;
+	opacity: 0;
+	color: red;
+	background: rgba(250,50,50,0.3);
+	border-radius: 1em;
 }
 
 /*Face Translation*/
@@ -193,20 +200,20 @@ header .title {
 
 /*Left*/
 #dice .face:nth-child(3) {
-	-webkit-transform: rotateY(90deg) translateZ(10em);
-	-moz-transform: rotateY(90deg) translateZ(10em);
-	-o-transform: rotateY(90deg) translateZ(10em);
-	-ms-transform: rotateY(90deg) translateZ(10em);
-	transform: rotateY(90deg) translateZ(10em);
-}
-
-/*Right*/
-#dice .face:nth-child(4) {
 	-webkit-transform: rotateY(-90deg) translateZ(10em);
 	-moz-transform: rotateY(-90deg) translateZ(10em);
 	-o-transform: rotateY(-90deg) translateZ(10em);
 	-ms-transform: rotateY(-90deg) translateZ(10em);
 	transform: rotateY(-90deg) translateZ(10em);
+}
+
+/*Right*/
+#dice .face:nth-child(4) {
+	-webkit-transform: rotateY(90deg) translateZ(10em);
+	-moz-transform: rotateY(90deg) translateZ(10em);
+	-o-transform: rotateY(90deg) translateZ(10em);
+	-ms-transform: rotateY(90deg) translateZ(10em);
+	transform: rotateY(90deg) translateZ(10em);
 }
 
 /*Top*/
@@ -248,20 +255,20 @@ header .title {
 
 /*Three*/
 #dice.left {
-	-webkit-transform: translateZ(-10em) rotateY(-90deg);
-	-moz-transform: translateZ(-10em) rotateY(-90deg);
-	-o-transform: translateZ(-10em) rotateY(-90deg);
-	-ms-transform: translateZ(-10em) rotateY(-90deg);
-	transform: translateZ(-10em) rotateY(-90deg);
-}
-
-/*Four*/
-#dice.right {
 	-webkit-transform: translateZ(-10em) rotateY(90deg);
 	-moz-transform: translateZ(-10em) rotateY(90deg);
 	-o-transform: translateZ(-10em) rotateY(90deg);
 	-ms-transform: translateZ(-10em) rotateY(90deg);
 	transform: translateZ(-10em) rotateY(90deg);
+}
+
+/*Four*/
+#dice.right {
+	-webkit-transform: translateZ(-10em) rotateY(-90deg);
+	-moz-transform: translateZ(-10em) rotateY(-90deg);
+	-o-transform: translateZ(-10em) rotateY(-90deg);
+	-ms-transform: translateZ(-10em) rotateY(-90deg);
+	transform: translateZ(-10em) rotateY(-90deg);
 }
 
 /*Five*/
@@ -275,15 +282,15 @@ header .title {
 
 /*Six*/
 #dice.back {
-	-webkit-transform: translateZ(-10em) rotateX(-180deg);
-	-moz-transform: translateZ(-10em) rotateX(-180deg);
-	-o-transform: translateZ(-10em) rotateX(-180deg);
-	-ms-transform: translateZ(-10em) rotateX(-180deg);
-	transform: translateZ(-10em) rotateX(-180deg);
+	-webkit-transform: translateZ(-10em) rotateY(180deg);
+	-moz-transform: translateZ(-10em) rotateY(180deg);
+	-o-transform: translateZ(-10em) rotateY(180deg);
+	-ms-transform: translateZ(-10em) rotateY(180deg);
+	transform: translateZ(-10em) rotateY(180deg);
 }
 
 /*Dice Sprite*/
-.dice_sprite {
+.dice-sprite {
 	-webkit-background-size: 640%;
 	-moz-background-size: 640%;
 	background-size: 640%;
@@ -291,31 +298,30 @@ header .title {
 	background-repeat: no-repeat;
 	width: 20em;
 	height: 20em;
-	/*background-position-y: -21.9em;*/
 	border-radius: 1em;
 }
 
-.dice_sprite.front {
+.dice-sprite.front {
 	background-position: -2.1em -21.9em;
 }
 
-.dice_sprite.bottom {
+.dice-sprite.bottom {
 	background-position: -22.9em -21.9em;
 }
 
-.dice_sprite.left {
+.dice-sprite.left {
 	background-position: -43.7em -21.9em;
 }
 
-.dice_sprite.right {
+.dice-sprite.right {
 	background-position: -64.5em -21.9em;
 }
 
-.dice_sprite.top {
+.dice-sprite.top {
 	background-position: -85.6em -21.9em;
 }
 
-.dice_sprite.back {
+.dice-sprite.back {
 	background-position: -106.4em -21.9em;
 }
 
