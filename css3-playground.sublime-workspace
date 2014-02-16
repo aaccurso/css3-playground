@@ -4,15 +4,47 @@
 		"selected_items":
 		[
 			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"trans",
+				"translateY"
+			],
+			[
+				"max-",
+				"max-height"
+			],
+			[
+				"back",
+				"background-size"
+			],
+			[
+				"color",
+				"background-color"
+			],
+			[
+				"text-",
+				"text-decoration"
+			],
+			[
+				"font",
+				"font-style"
+			],
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"style",
+				"list-style"
+			],
+			[
 				"margin",
 				"margin"
 			],
 			[
 				"ba",
-				"background"
-			],
-			[
-				"back",
 				"background"
 			],
 			[
@@ -26,10 +58,6 @@
 			[
 				"col",
 				"color"
-			],
-			[
-				"font",
-				"font-size"
 			],
 			[
 				"meta",
@@ -46,10 +74,6 @@
 			[
 				"dis",
 				"display"
-			],
-			[
-				"padd",
-				"padding"
 			],
 			[
 				"hei",
@@ -163,13 +187,77 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "star_wars_titles.html",
+			"settings":
+			{
+				"buffer_size": 1535,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "perspective.html",
+			"settings":
+			{
+				"buffer_size": 1769,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "3D_dice.html",
+			"settings":
+			{
+				"buffer_size": 3146,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "star_wars_titles.css",
+			"settings":
+			{
+				"buffer_size": 60686,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "3D_dice.css",
+			"settings":
+			{
+				"buffer_size": 6384,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "perspective.css",
+			"settings":
+			{
+				"buffer_size": 1193,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "Packages/JSLint/JSLint.sublime-build",
 	"command_palette":
 	{
-		"height": 173.0,
+		"height": 392.0,
 		"selected_items":
 		[
+			[
+				":w",
+				":w - Save"
+			],
+			[
+				"tog bar",
+				"View: Toggle Side Bar"
+			],
+			[
+				"toggle bar",
+				"View: Toggle Side Bar"
+			],
+			[
+				"to bar",
+				"View: Toggle Side Bar"
+			],
 			[
 				"set html",
 				"Set Syntax: HTML"
@@ -177,10 +265,6 @@
 			[
 				"set css",
 				"Set Syntax: CSS"
-			],
-			[
-				":w",
-				":w - Save"
 			],
 			[
 				"toggle",
@@ -243,7 +327,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 472.0
+		"width": 461.0
 	},
 	"console":
 	{
@@ -260,8 +344,10 @@
 	},
 	"file_history":
 	[
-		"/C/Users/Alan/git/Maderasmil/css/3d_dice.css",
 		"/C/Users/Alan/git/css3-playground/3D_dice.html",
+		"/C/Users/Alan/git/css3-playground/images/Die_Faces.svg",
+		"/C/Users/Alan/git/css3-playground/star_wars_titles.html",
+		"/C/Users/Alan/git/Maderasmil/css/3d_dice.css",
 		"/C/Users/Alan/Copy/CXIA_aaccurso/REPMGR1.2/chequea_tamanio_pg_xlog.sh",
 		"/C/Users/Alan/Copy/CXIA_aaccurso/REPMGR1.2/chequea_replicacion_repmgr.sh",
 		"/C/Users/Alan/git/Maderasmil/css/hoverdir.css",
@@ -381,6 +467,21 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"cubic-bezier(.54,.09,.56,1)",
+			"border-radius",
+			"cursor",
+			"back",
+			"                    <div class=\"face-content\">Front-One</div>\n",
+			"<div class=\"face-content\">",
+			"<div class=\"face-content\">Front-One</div>",
+			"#dice ",
+			"#dice .",
+			" ",
+			"text",
+			"0, 1, 0, ",
+			"1, 0, 0, ",
+			"10em",
+			"	width: 10em; height: 10em;\n",
 			"LA_SEGUNDA",
 			"border-radius",
 			"logo",
@@ -518,13 +619,177 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "star_wars_titles.html",
+					"settings":
+					{
+						"buffer_size": 1535,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								604,
+								604
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/AngularJS/AngularJS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "perspective.html",
+					"settings":
+					{
+						"buffer_size": 1769,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								511,
+								407
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/AngularJS/AngularJS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "3D_dice.html",
+					"settings":
+					{
+						"buffer_size": 3146,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/AngularJS/AngularJS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		},
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 3,
+					"file": "star_wars_titles.css",
+					"settings":
+					{
+						"buffer_size": 60686,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								59460,
+								59460
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 16906.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "3D_dice.css",
+					"settings":
+					{
+						"buffer_size": 6384,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1385,
+								1348
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 958.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "perspective.css",
+					"settings":
+					{
+						"buffer_size": 1193,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								524,
+								524
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 108.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -556,7 +821,7 @@
 		"cols":
 		[
 			0.0,
-			0.649227110583,
+			0.577246209869,
 			1.0
 		],
 		"rows":
