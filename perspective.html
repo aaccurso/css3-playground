@@ -14,37 +14,57 @@
      <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
      <script type="text/javascript">
      	(function($){
-     		var my_name = "Alan Accurso",
-     			i = 0, len = my_name.length,
-          words = my_name.split(" ");
-     		
-        // Create two div elements for each letter.
-        // One upper case and the other lower case.
-        for(; i < len; i ++) {
-     			var $container = document.getElementById('container'),
-     				$div = document.createElement('div'),
-            $figure = document.createElement('div'),
-     				$upper_case = document.createElement('div'),
-     				$lower_case = document.createElement('div');
+        $.fn.flippingText = function(text, options) {
+       		var words = text ? text.split(" ") : "flipping text".split(" "),
+            $container = this,
+            $flipping_container = document.createElement('div'),
+            settings = $.extend({
+              // These are the defaults.
+              capitalize: true
+            }, options );
 
-     			$div.setAttribute('class', 'letter-wrapper');
-          $figure.setAttribute('class', 'letter');
-     			$upper_case.setAttribute('class', 'upper-case');
-     			$lower_case.setAttribute('class', 'lower-case');
+          $flipping_container.setAttribute('id', 'flipping-container');
+       		
+          $.each( words, function(index, word) {
+            var i, len, $word = document.createElement('div');
 
-          $div.appendChild($figure);
-          $figure.appendChild($upper_case);
-     			$figure.appendChild($lower_case);
+            $word.setAttribute('class', 'word');
 
-     			$upper_case.innerText = $lower_case.innerText = my_name[i];
-     			$container.appendChild($div);
-     		}
+            for( i = 0, len = word.length; i < len; i++ ){
+              var $letter_wrapper = document.createElement('div'),
+                $letter = document.createElement('div'),
+                $front_face = document.createElement('div'),
+                $back_face = document.createElement('div');
 
-        // On mouseenter flip the letter.
-        $('#container').find('.letter').on( 'mouseenter', function() {
-            $( this ).toggleClass( 'letter-flip' );
-        });
+              $letter_wrapper.setAttribute('class', 'letter-wrapper');
+              if( i && settings.capitalize ) {
+                $letter.setAttribute('class', 'letter letter-flip');
+              } else {
+                $letter.setAttribute('class', 'letter');
+              }
+              $front_face.setAttribute('class', 'face front-face');
+              $back_face.setAttribute('class', 'face back-face');
+
+              $letter_wrapper.appendChild($letter);
+              $letter.appendChild($front_face);
+              $letter.appendChild($back_face);
+
+              $front_face.innerText = $back_face.innerText = word[i];
+              $word.appendChild($letter_wrapper);
+            }
+
+            $flipping_container.appendChild($word);
+          });
+          
+          $container.append($flipping_container);
+          // On mouseenter flip the letter.
+          $container.find('.letter').on( 'mouseenter', function() {
+              $( this ).toggleClass( 'letter-flip' );
+          });
+        }
      	})(jQuery);
+
+      $('#container').flippingText();
      </script>
   </body>
 </html>
