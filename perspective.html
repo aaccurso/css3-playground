@@ -9,7 +9,8 @@
       <link rel="author" href="humans.txt">
   </head>
   <body>
-     <div id="container"></div>
+     <div id="container1"></div>
+     <div id="container2"></div>
 
      <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
      <script type="text/javascript">
@@ -20,7 +21,8 @@
             $flipping_container = document.createElement('div'),
             settings = $.extend({
               // These are the defaults.
-              capitalize: true
+              capitalize: true,
+              border_radius: true
             }, options );
 
           $flipping_container.setAttribute('id', 'flipping-container');
@@ -34,22 +36,27 @@
               var $letter_wrapper = document.createElement('div'),
                 $letter = document.createElement('div'),
                 $front_face = document.createElement('div'),
-                $back_face = document.createElement('div');
+                $back_face = document.createElement('div'),
+                customize = {};
 
-              $letter_wrapper.setAttribute('class', 'letter-wrapper');
-              if( i && settings.capitalize ) {
-                $letter.setAttribute('class', 'letter letter-flip');
-              } else {
-                $letter.setAttribute('class', 'letter');
-              }
-              $front_face.setAttribute('class', 'face front-face');
-              $back_face.setAttribute('class', 'face back-face');
+              customize.capitalize = settings.capitalize && i ? 'letter-flip' : '';
+              customize.border_radius = settings.border_radius ? 'border-radius' : '';
 
-              $letter_wrapper.appendChild($letter);
-              $letter.appendChild($front_face);
-              $letter.appendChild($back_face);
+              $letter_wrapper.setAttribute('class', 'letter-wrapper'
+                + ' ' + customize.border_radius);
+              $letter.setAttribute('class', 'letter'
+                + ' ' + customize.capitalize
+                + ' ' + customize.border_radius);
+              $front_face.setAttribute('class', 'face front-face'
+                + ' ' + customize.border_radius);
+              $back_face.setAttribute('class', 'face back-face'
+                + ' ' + customize.border_radius);
 
               $front_face.innerText = $back_face.innerText = word[i];
+
+              $letter.appendChild($front_face);
+              $letter.appendChild($back_face);
+              $letter_wrapper.appendChild($letter);
               $word.appendChild($letter_wrapper);
             }
 
@@ -58,13 +65,16 @@
           
           $container.append($flipping_container);
           // On mouseenter flip the letter.
-          $container.find('.letter').on( 'mouseenter', function() {
-              $( this ).toggleClass( 'letter-flip' );
+          $container.find('#flipping-container .letter-wrapper').on( 'mouseenter', function() {
+            console.log( $(this).find('.back-face').text() );
+              $( this ).find('.letter').toggleClass( 'letter-flip' );
           });
         }
      	})(jQuery);
 
-      $('#container').flippingText();
+      // Examples
+      $('#container1').flippingText();
+      $('#container2').flippingText('Alan Accurso', {capitalize: false});
      </script>
   </body>
 </html>
